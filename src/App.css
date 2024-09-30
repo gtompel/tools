@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  min-height: 200vh;
+  padding-bottom: 60px; /* Height of the tap bar */
+}
+
+h1, p {
+  padding: 20px;
+  margin: 0;
+}

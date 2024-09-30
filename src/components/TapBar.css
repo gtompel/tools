@@ -1,0 +1,29 @@
+.tap-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #faf8f4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    transition: transform 0.3s;
+}
+
+.tap-bar.hide {
+    transform: translateY(100%);
+}
+
+.tap-bar button {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tap-bar button:hover {
+    text-decoration: underline;
+}
+.btn-like {
+    background-image: url("https://assets-prod.inmyroom.ru/assets/svg-icons/shared/heart__black.8d35aab0.svg");
+}
