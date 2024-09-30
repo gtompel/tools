@@ -1,6 +1,7 @@
 import React from 'react';
 import TapBar from './components/TapBar.js';
 import './App.css';
+import './index.css';
 
 const App = () => {
     return (
