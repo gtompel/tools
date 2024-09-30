@@ -24,6 +24,13 @@
 .tap-bar button:hover {
     text-decoration: underline;
 }
-.btn-like {
-    background-image: url("https://assets-prod.inmyroom.ru/assets/svg-icons/shared/heart__black.8d35aab0.svg");
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
+
+button svg {
+    width: 24px;
+    height: 24px;
+} 

@@ -5,7 +5,7 @@ body {
 
 .App {
   min-height: 200vh;
-  padding-bottom: 60px; /* Height of the tap bar */
+  padding-bottom: 60px;
 }
 
 h1, p {

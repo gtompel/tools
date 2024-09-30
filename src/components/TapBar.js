@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { ReactComponent as ShareIcon } from '../icons/share.svg';
+import { ReactComponent as UpIcon } from '../icons/up.svg';
+import { ReactComponent as CommentIcon } from '../icons/comment.svg';
+import { ReactComponent as FavoriteIcon } from '../icons/favorite.svg';
 import './TapBar.css';
 
 const TapBar = () => {
@@ -62,10 +66,20 @@ const TapBar = () => {
 
     return (
         <div className={`tap-bar ${showTapBar ? 'show' : 'hide'}`}>
-            <button onClick={handleShare}>Поделиться</button>
-            <button onClick={scrollToTop}>Вверх</button>
-            <button onClick={incrementCommentCount}>💬 {commentCount}</button>
-            <button className="btn-like" onClick={incrementFavoriteCount}>{favoriteCount}</button>
+            <button onClick={handleShare}>
+                <ShareIcon />
+            </button>
+            <button onClick={scrollToTop}>
+                <UpIcon />
+            </button>
+            <button onClick={incrementCommentCount}>
+                <CommentIcon />
+                {commentCount}
+            </button>
+            <button onClick={incrementFavoriteCount}>
+                <FavoriteIcon />
+                {favoriteCount}
+            </button>
         </div>
     );
 };
